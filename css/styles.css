@@ -10,6 +10,31 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+
 .list {list-style: none;}
 .link {text-decoration: none;}
 
@@ -30,9 +55,38 @@ body {
     background-color: var(--third-backgraund-color)
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+
 
 /* =======HEADER=================== */
+
+.page-header-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+ .page-nav{
+     display: flex;
+     align-items: center;
+ }
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+        margin-right: 93px; 
         font-family: 'Raleway';
         font-size: 26px;
         line-height: 1.19;        
@@ -46,11 +100,14 @@ body {
     color: var(--third-text-color);
 }
 
+
+
 .menu-link {
         font-weight: 500;       
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--primery-text-color);             
+        color: var(--primery-text-color);  
+        margin-left: auto;           
 }
 
 .contact{
@@ -65,6 +122,13 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+.menu-item:not(:last-child){ 
+    margin-right: 50px;
+}
+
+.menu-link:not(:last-child) {
+    margin-right: 50px;
+}
 
 /* ==========HERO================ */
 .hero{
