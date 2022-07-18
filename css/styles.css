@@ -150,9 +150,14 @@ body {
 
 .hero {
 	padding-top: 200px;
-	padding-bottom: 280px;
+	padding-bottom: 200px;
 	text-align: center;
 	background-color: var(--secondary-backgraund-color);
+}
+
+.hero-title {
+	margin-left: 237px;
+	margin-right: 237px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -161,9 +166,6 @@ body {
 	color: var(--third-text-color);
 }
 
-.hero .container {
-	width: 1000px;
-}
 .hero-btn {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -199,6 +201,7 @@ body {
 }
 .special-title {
 	margin-bottom: 10px;
+	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
@@ -211,6 +214,10 @@ body {
 
 /* ==============LIST OFFER=========== */
 
+.about {
+	padding-top: 0px;
+}
+
 .offer-list {
 	display: flex;
 	gap: 30px;
@@ -221,6 +228,10 @@ body {
 	flex-basis: calc((100% - 60px) / 3);
 }
 /* ==============TEAM================ */
+
+.team {
+	background-color: var(--third-backgraund-color);
+}
 
 .section-title {
 	margin-bottom: 50px;
@@ -261,20 +272,21 @@ body {
 
 /* =============FOOTER================= */
 
+.footer .logo {
+	display: block;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+
 .footer {
 	padding-top: 60px;
 	padding-bottom: 59px;
 	background-color: var(--secondary-backgraund-color);
 }
 
-.footer .logo {
-	margin-right: 0px;
-	/* margin-bottom: 20px; */
-	/* я розумію, що тут якийсь костиль в мене з цим нижнім марджином, але в мене ніяк не виходить інакше */
-}
-/* костиль для нижнього марджина */
-.footer-logo {
-	margin-bottom: 20px;
+.footer-link:not(:last-child) {
+	display: block;
+	margin-bottom: 9px;
 }
 
 .adress-linkmap {
@@ -305,12 +317,14 @@ body {
 
 .portfolio-btn {
 	margin-right: 8px;
+	padding-left: 22px;
+	padding-right: 22px;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
-	/* text-align: center; */
+	text-align: center;
 	letter-spacing: 0.03em;
 	background: var(--third-backgraund-color);
 	border-radius: 4px;
