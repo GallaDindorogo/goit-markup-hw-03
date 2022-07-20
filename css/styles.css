@@ -156,8 +156,9 @@ body {
 }
 
 .hero-title {
-	margin-left: 237px;
-	margin-right: 237px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -327,11 +328,11 @@ body {
 	justify-content: center;
 	margin-bottom: 50px;
 	outline: #757575;
+	padding: 6px 22px;
 }
 
 .portfolio-btn {
 	margin-right: 8px;
-	padding: 6px 22px;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
